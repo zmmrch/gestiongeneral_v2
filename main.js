@@ -79,8 +79,8 @@ $(document).ready(function () {
         scrollBar: true,
         responsiveWidth: 400,
         navigation: true,
-        // navigationTooltips: ["home", "about", "portfolio", "contact", "connect"],
-        // anchors: ["home", "about", "portfolio", "contact", "connect"],
+        navigationTooltips: ["home", "about", "portfolio", "contact", "connect"],
+        anchors: ["home", "about", "portfolio", "contact", "connect"],
         menu: "#myMenu",
         fitToSection: false,
 
@@ -94,30 +94,30 @@ $(document).ready(function () {
                     $(this).css("opacity", "1");
                 });
                 $(".header-links a").each(function () {
-                    $(this).css("color", "#1d5078");
+                    $(this).css("color", "white");
                 });
                 $(".header-links").css("background-color", "transparent");
             } else if (index != 1) {
                 $(".header-links a").each(function () {
-                    $(this).css("color", "#1d5078");
+                    $(this).css("color", "white");
                 });
                 $(".header-links").css("background-color", "transparent");
             }
 
-            //using index
-            if (index == 2) {
-                /* animate skill bars */
-                $(".skillbar").each(function () {
-                    $(this)
-                        .find(".skillbar-bar")
-                        .animate(
-                            {
-                                width: $(this).attr("data-percent")
-                            },
-                            2500
-                        );
-                });
-            }
+            // //using index
+            // if (index == 2) {
+            //     /* animate skill bars */
+            //     $(".skillbar").each(function () {
+            //         $(this)
+            //             .find(".skillbar-bar")
+            //             .animate(
+            //                 {
+            //                     width: $(this).attr("data-percent")
+            //                 },
+            //                 2500
+            //             );
+            //     });
+            // }
         }
     });
 
@@ -127,15 +127,15 @@ $(document).ready(function () {
     });
 
     // fullpage.js link navigation
-    $(document).on("click", "#skills", function () {
+    $(document).on("click", "#nuestros_servicios", function () {
         $.fn.fullpage.moveTo(2);
     });
 
-    $(document).on("click", "#projects", function () {
+    $(document).on("click", "#nuestros_clientes", function () {
         $.fn.fullpage.moveTo(3);
     });
 
-    $(document).on("click", "#contact", function () {
+    $(document).on("click", "#presupuestos", function () {
         $.fn.fullpage.moveTo(4);
     });
 

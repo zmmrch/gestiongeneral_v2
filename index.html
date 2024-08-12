@@ -6,55 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href='https://fonts.googleapis.com/css?family=Raleway:100,200,400,600' rel='stylesheet' type='text/css'>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css" rel="stylesheet"
+        type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
-    <!-- navbar header -->
     <div class="nav-header">
         <div class="nav-brand">
-            <img src="./LOGO 393x137.png">
+            <a href="#principal"><img src="./LOGO 393x137.png" alt=""></a>
         </div>
         <i class="fa fa-bars fa-3x"></i>
         <div class="header-links">
             <ul>
-                <li data-menuanchor=""><a href="#about">TURNOS</a></li>
-                <li data-menuanchor=""><a href="#about">PRESUPUESTOS</a></li>
+                <li data-menuanchor="secondPage"><a href="#nuestros_servicios">NUESTROS SERVICIOS</a></li>
+                <li data-menuanchor="thirdPage"><a href="#nuestros_clientes">NUESTROS CLIENTES</a></li>
                 <li data-menuanchor="fourthPage"><a href="#about">CONSULTAS</a></li>
-                <li data-menuanchor="thirdPage"><a href="#portfolio">NUESTROS CLIENTES</a></li>
-                <li data-menuanchor="secondPage"><a href="#contact">NUESTROS SERVICIOS</a></li>
-               
+                <li data-menuanchor=""><a href="#presupuestos">PRESUPUESTOS</a></li>
+                <li data-menuanchor=""><a href="#turnos">TURNOS</a></li>
+                <a href="https://api.whatsapp.com/send?phone=5491159401198">
+                    <img src="./WHATSAPP 90x90.png" alt="" style="width: 3%; padding-left: 5%;">
+                </a>
             </ul>
         </div>
     </div>
-    <!-- end navbar header -->
-
-    <!-- sidebar slider -->
     <div class="nav-screen">
         <i class="fa fa-times fa-3x"></i>
         <div class="nav-container">
             <div class="nav-links">
                 <ul id='myMenu'>
-                    <li data-menuanchor=""><a href="#about">TURNOS</a></li>
-                <li data-menuanchor=""><a href="#about">PRESUPUESTOS</a></li>
-                <li data-menuanchor="fourthPage"><a href="#about">CONSULTAS</a></li>
-                <li data-menuanchor="thirdPage"><a href="#portfolio">NUESTROS CLIENTES</a></li>
-                <li data-menuanchor="secondPage"><a href="#contact">NUESTROS SERVICIOS</a></li>
+                    <li data-menuanchor="secondPage"><a href="#nuestros_servicios"
+                            style="font-size: 18px;">SERVICIOS</a></li>
+                    <li data-menuanchor="thirdPage"><a href="#nuestros_clientes"
+                            style="font-size: 18px; margin-right: 40% !important;">CLIENTES</a></li>
+                    <li data-menuanchor="fourthPage"><a href="#"
+                            style="font-size: 18px; margin-right: 30% !important;">CONSULTAS</a></li>
+                    <li data-menuanchor=""><a href="#presupuestos"
+                            style="font-size: 18px; margin-right: 10% !important;">PRESUPUESTOS</a></li>
+                    <li data-menuanchor=""><a href="#turnos"
+                            style="font-size: 18px; margin-right: 45% !important;">TURNOS</a></li>
+                    <a href="https://api.whatsapp.com/send?phone=5491159401198">
+                        <img src="./WHATSAPP 90x90.png" alt="" style="width: 20%;">
+                    </a>
                 </ul>
             </div>
         </div>
-    </div> 
-
+    </div>
     <div id="fullpage">
-        
-        <!-- begin section -->
-        <div class="section aboutme" data-anchor="aboutme">   
-             <!--  esfera-->
+        <div class="section aboutme" id="principal">
             <div class="ellipses-container">
-                <!-- <h2 class="greeting">ISO <br> DGQ <br>EOQ</h2> -->
                 <div class="ellipses ellipses__outer--thin" style="margin-right: 30%;">
                     <div class="ellipses ellipses__orbit"></div>
                 </div>
@@ -66,16 +68,14 @@
             </div>
             <i id="moveDown" class="fa fa-chevron-down fa-3x bounce"></i>
         </div>
-        <!-- end section -->
-       
-        <!-- begin section -->
-
-        <div class="section" data-anchor="skills">
+        <div class="section" id="nuestros_servicios">
             <div class="row">
                 <div class="column">
                     <div class="flip">
-                        <div class="front" style="background-image: url(./PRODUCTOS\ CHICO\ 514x143.png)">
-                            <h1 class="text-shadow">ISO 9001</h1>
+                        <div class="front"
+                            style="background-image: url(./PRODUCTOS\ GRANDE\ 603x143.png); background-size: contain;">
+                            <h1 style="color:#93b5bf; font-size: 42px; font-weight: bold;" class="text-shadow">ISO 9001
+                            </h1>
                             <h2 class="text-shadow">Gestión de la Calidad</h2>
                         </div>
                         <div class="back">
@@ -87,19 +87,22 @@
                 <div class="column">
                     <div class="flip">
                         <div class="front" style="background-image: url(./PRODUCTOS\ CHICO\ 514x143.png)">
-                            <h1 class="text-shadow">ISO 19011</h1>
+                            <h1 style="color:#93b5bf; font-size: 42px; font-weight: bold;" class="text-shadow">ISO 19011
+                            </h1>
                             <h2 class="text-shadow">Auditorias de Sistemas de Gestión</h2>
                         </div>
                         <div class="back">
                             <h2>ISO 19011 Auditorías del Sistemas de Gestión:</h2>
-                            <p>Realiza auditorías del sistema de gestión de tu empresa de acuerdo a estándares internacionales.</p>
+                            <p>Realiza auditorías del sistema de gestión de tu empresa de acuerdo a estándares
+                                internacionales.</p>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="flip">
                         <div class="front" style="background-image: url(./PRODUCTOS\ CHICO\ 514x143.png)">
-                            <h1 class="text-shadow">Sistemas Gestión a Medida</h1>
+                            <h1 style="color:#93b5bf; font-size: 42px; font-weight: bold;" class="text-shadow">Sistemas
+                                Gestión a Medida</h1>
                         </div>
                         <div class="back">
                             <h2>Sistemas de Gestión a Medida:</h2>
@@ -108,12 +111,12 @@
                     </div>
                 </div>
             </div>
-    
             <div class="row">
                 <div class="column">
                     <div class="flip">
                         <div class="front" style="background-image: url(./PRODUCTOS\ CHICO\ 514x143.png)">
-                            <h1 class="text-shadow">ISO 14001</h1>
+                            <h1 style="color:#93b5bf; font-size: 42px; font-weight: bold;" class="text-shadow">ISO 14001
+                            </h1>
                             <h2 class="text-shadow">Gestión ambiental</h2>
                         </div>
                         <div class="back">
@@ -125,195 +128,156 @@
                 <div class="column">
                     <div class="flip">
                         <div class="front" style="background-image: url(./PRODUCTOS\ CHICO\ 514x143.png)">
-                            <h1 class="text-shadow">Sistemas Gestión Específicos</h1>
+                            <h1 style="color:#93b5bf; font-size: 42px; font-weight: bold;" class="text-shadow">Sistemas
+                                Gestión Específicos</h1>
                         </div>
                         <div class="back">
                             <h2>Sistemas de Gestión Específicos:</h2>
-                            <p>Adapta tu sistema de gestión a las normativas específicas de tu actividad (petrolera, aeronáutica SMS, espacial, química, alimenticia, etc.).</p>
+                            <p>Adapta tu sistema de gestión a las normativas específicas de tu actividad (petrolera,
+                                aeronáutica SMS, espacial, química, alimenticia, etc.).</p>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="flip">
                         <div class="front" style="background-image: url(./PRODUCTOS\ CHICO\ 514x143.png)">
-                            <h1 class="text-shadow">Sistemas Gestión Integrados</h1>
+                            <h1 style="color:#93b5bf; font-size: 42px; font-weight: bold;" class="text-shadow">Sistemas
+                                Gestión Integrados</h1>
                         </div>
                         <div class="back">
                             <h2>Sistemas de Gestión Integrados:</h2>
-                            <p>Integra la gestión de la calidad (ISO 9001), el ambiente (ISO 14001) y la seguridad (ISO 45001- OHSAS 18001), simplificando la burocracia en tu empresa y asegurando la satisfacción de tus clientes, el cuidado del ambiente y la seguridad de los trabajadores.</p>
+                            <p>Integra la gestión de la calidad (ISO 9001), el ambiente (ISO 14001) y la seguridad (ISO
+                                45001- OHSAS 18001), simplificando la burocracia en tu empresa y asegurando la
+                                satisfacción de tus clientes, el cuidado del ambiente y la seguridad de los
+                                trabajadores.</p>
                         </div>
                     </div>
                 </div>
             </div>
-    
             <div class="row">
                 <div class="column">
                     <div class="flip">
                         <div class="front" style="background-image: url(./PRODUCTOS\ CHICO\ 514x143.png)">
-                            <h1 class="text-shadow">ISO 45001</h1>
+                            <h1 style="color:#93b5bf; font-size: 42px; font-weight: bold;" class="text-shadow">ISO 45001
+                            </h1>
                             <h2 class="text-shadow">Gestión de la seguridad</h2>
                         </div>
                         <div class="back">
-                            <h2>Angular</h2>
-                            <p>..</p>
+                            <h2>Sistemas de Gestión de la Seguridad y Salud Ocupacional:</h2>
+                            <p>Reduce los riesgos, accidentes y contaminantes en el ambiente de trabajo de tu empresa.
+                            </p>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="flip">
                         <div class="front" style="background-image: url(./PRODUCTOS\ CHICO\ 514x143.png)">
-                            <h1 class="text-shadow">Sistemas Gestión de Calidad Total</h1>
+                            <h1 style="color:#93b5bf; font-size: 42px; font-weight: bold;" class="text-shadow">Sistemas
+                                Gestión de Calidad Total</h1>
                         </div>
                         <div class="back">
                             <h2>Sistemas de Gestión de Calidad Total:</h2>
-                            <p>Incorpora la metodología de mejora continua en todos los procesos de tu empresa y asegura la satisfacción de los clientes internos y externos.</p>
+                            <p>Incorpora la metodología de mejora continua en todos los procesos de tu empresa y asegura
+                                la satisfacción de los clientes internos y externos.</p>
                         </div>
                     </div>
                 </div>
                 <div class="column">
                     <div class="flip">
                         <div class="front" style="background-image: url(./PRODUCTOS\ CHICO\ 514x143.png)">
-                            <h1 class="text-shadow">Soluciones Especiales</h1>
+                            <h1 style="color:#93b5bf; font-size: 42px; font-weight: bold;" class="text-shadow">
+                                Soluciones Especiales</h1>
                         </div>
                         <div class="back">
-                            <h2>Angular</h2>
-                            <p>..</p>
+                            <h2>Soluciones Especiales:</h2>
+                            <p>Contrata a nuestro equipo de ingenieros y expertos en gestión, sistemas, procesos,IA,
+                                RRHH, HyS, medio ambiente y salud para diseñar soluciones a medida y abordar desafíos
+                                únicos. Utilizamos tecnología avanzada y asistencia de IA para procesar requisitos
+                                específicos, generar sistemas de gestión, planes de auditoría y programas de mejora,
+                                ofreciendo respuestas innovadoras y eficientes a tus necesidades.</p>
                         </div>
                     </div>
                 </div>
-            </div>    
-                <!-- <h1 class="wow fadeInDown" data-wow-delay="0.2s">ABOUT ME</h1>
-                <p class="wow fadeInDown" data-wow-delay="0.2s">Hi, I'm Brad Engelhardt! I'm a Silicon Valley based Web
-                    Designer & Front-end Developer focused on creating clean, responsive web designs!</p> -->
-  
+            </div>
         </div>
-        <!-- end section -->
-
-        <!-- begin section -->
-
-        <div class="section" data-anchor="projects">
+        <div class="section" id="nuestros_clientes">
             <div class="content-slide">
                 <div class="slide">
                     <h1 class="wow fadeInDown" data-wow-delay="0.2s">REPSOL YPF</h1>
-                    <p class="wow fadeInDown" data-wow-delay="0.2s">Soluciones Especiales - Benchmarking, Análisis de Indicadores de Gestión y Performance</p>
-                    <img src="./LOGO YPF 684 x 169.png" alt="">
-                </div> 
+                    <p class="wow fadeInDown" data-wow-delay="0.2s">Soluciones Especiales - Benchmarking, Análisis de
+                        Indicadores de Gestión y Performance</p>
+                    <img src="./LOGO YPF 684 x 169.png" alt="ypf">
+                </div>
                 <div class="slide">
                     <h1>TLON SPACE S.A. </h1>
                     <p>Identificación de Peligros en la Etapa de lanzamiento de Cohetes Spaciales. (Año 2021)</p>
                     <p>Soluciones Especiales - Diseño del Puerto Espacial de Queqúen ( Año 2021 - 2022)</p>
-                    <img src="./LOGO TLON SPACE 247 x 251.png">
+                    <img src="./LOGO TLON SPACE 247 x 251.png" alt="TLON">
                 </div>
                 <div class="slide">
-                    <h1>ALBA S.A. –  ICI paints</h1>
+                    <h1>ALBA S.A. – ICI paints</h1>
                     <p>Desarrollo e Implementación de un Sistema de Gestión de Calidad y Ambiente (ISO 9001 y 14001)</p>
-                    <img src="./LOGO ALBA 451 x 251.png">
+                    <img src="./LOGO ALBA 451 x 251.png" alt="ALBA">
                 </div>
                 <div class="slide">
                     <h1>AM SEGURIDAD</h1>
                     <p>aaaaaaaaaaaaaa.</p>
-                    <img src="./LOGO AM SEGURIDAD 230 x 251.png">
+                    <img src="./LOGO AM SEGURIDAD 230 x 251.png" alt="am_seguridad">
                 </div>
                 <div class="slide">
                     <h1>CREDICOP</h1>
                     <p>aaaaaaaaaaa.</p>
-                    <img src="./LOGO CREDICOP 346 x 169.png">
+                    <img src="./LOGO CREDICOP 346 x 169.png" alt="CREDICOP">
                 </div>
                 <div class="slide">
                     <h1>HELICÓPTEROS MARINOS S.A.</h1>
-                    <p>Desarrollo, Implementación y Coord. del Sist. de Gestión Integrado (ISO 9001,  14001 OHSAS 18001, Servicios de HSE)</p>
-                    <img src="./LOGO HELICOPTEROS MARINOS 349 x 169.png">
+                    <p>Desarrollo, Implementación y Coord. del Sist. de Gestión Integrado (ISO 9001, 14001 OHSAS 18001,
+                        Servicios de HSE)</p>
+                    <img src="./LOGO HELICOPTEROS MARINOS 349 x 169.png" alt="HELICOPTEROS">
                 </div>
                 <div class="slide">
                     <h1>HUONOIL S.A.</h1>
-                    <p>Desarrollo e Implementación de un Sistema de Gestión de Seguridad y Ambiente (OSHAS 18001 y ISO 14001).</p>
-                    <img src="./LOGO HUINOIL 397 x 169.png">
+                    <p>Desarrollo e Implementación de un Sistema de Gestión de Seguridad y Ambiente (OSHAS 18001 y ISO
+                        14001).</p>
+                    <img src="./LOGO HUINOIL 397 x 169.png" alt="MAROLIO">
                 </div>
                 <div class="slide">
                     <h1>MAROLIO S.A.</h1>
                     <p>Desarrollo, Implementación y Coordinación del Sistema de Gestión de Calidad Total a Medida.</p>
-                    <img src="./LOGO MAROLIO 350 x 169.png">
+                    <img src="./LOGO MAROLIO 350 x 169.png" alt="MAROLIO">
                 </div>
                 <div class="slide">
                     <h1>MAXICONSUMO S.A.</h1>
                     <p>Desarrollo, Implementación y Coordinación del Sistema de Gestión de Calidad Total a Medida.</p>
-                    <img src="./LOGO MAXICONSUMO 251 x 251.png">
+                    <img src="./LOGO MAXICONSUMO 251 x 251.png" alt="MAXICONSUMO">
                 </div>
             </div>
         </div>
-        <!-- end section -->
-
-        <!-- begin section -->
-
-        <div class="section" data-anchor="contact">
+        <div class="section" id="presupuestos">
             <div class="content wow fadeInDown" data-wow-delay="0.2s">
-                <h1>CONTACT ME</h1>
-                <p>Whether you're interested in working with me or just want to say hello, I'd love to hear from you!
-                </p>
+                <h1>PRESUPUESTOS</h1>
                 <br>
-                <div class="contact-form">
-
-                    <div id="form-messages"></div>
-                    <form id="ajax-contact" method="post" role="form" action="contact.php" data-toggle="validator">
-                        <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="0.6s">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="NAME"
-                                data-error="Field can't be blank!" required>
-                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                            <div class="help-block with-errors"></div>
-                        </div>
-
-                        <div class="form-group has-feedback wow fadeInRight" data-wow-delay="0.8s">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="EMAIL"
-                                data-error="Field can't be blank!" required>
-                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                            <div class="help-block with-errors"></div>
-                        </div>
-
-                        <div class="form-group has-feedback wow fadeInLeft" data-wow-delay="1s">
-                            <textarea data-minlength="10" class="form-control" id="message" name="message"
-                                placeholder="MESSAGE" data-error="Minimum of 10 characters" required></textarea>
-                            <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
-                            <div class="help-block with-errors"></div>
-                        </div>
-
-                        <div class="hidden">
-                            <input type="text" class="form-control" id="human" name="human" placeholder="">
-                        </div>
-                        <div class="wow fadeInUp" data-wow-delay="1s">
-                            <button type="submit" id="submit" name="submit" class="btn btn-lg">SEND MESSAGE</button>
-                        </div>
-                    </form>
-                    <br>
-                </div>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScdmhcn4be5NAHKQ1sSzP91RSCzPaW_m80YMH1rXWMKIor3Aw/viewform?embedded=true"
+                    width="800" height="600" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
             </div>
         </div>
-        <!-- end section -->
-
-        <!-- begin section -->
-
-        <div class="section fp-auto-height">
-            <div class="footer">
-                <p>CONNECT WITH ME</p>
-                <div class="social-links">
-                    <span><i class="fa fa-linkedin fa-2x"></i></a></span>
-                    <span><i class="fa fa-twitter fa-2x"></i></a></span>
-                    <span><i class="fa fa-github fa-2x"></i></a></span>
-                    <span><i class="fa fa-codepen fa-2x"></i></a></span>
-                </div>
+        <div class="section" id="turnos">
+            <div class="content wow fadeInDown" data-wow-delay="0.2s">
+                <h1>TURNOS</h1>
+                <br>
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLScdmhcn4be5NAHKQ1sSzP91RSCzPaW_m80YMH1rXWMKIor3Aw/viewform?embedded=true"
+                    width="800" height="600" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
             </div>
         </div>
-        <!-- end section -->
-
     </div>
-    <!-- end fullpage -->
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/fullpage.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js"></script>
     <script src="./main.js"></script>
-
 </body>
 
 </html>
